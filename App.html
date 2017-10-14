@@ -1,0 +1,27 @@
+<!doctype HTML>
+<html lang="en-US" ng-app="index">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to AngularJS application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <div id="header-wrapper" ng-controller="headerCtrl">
+      <span class="logo pull-left">{{title}}</span>
+      <span class="tagline pull-left">{{tagline}}</span>
+      <div class="nav-wrapper pull-left">
+        <ul class="nav nav-pills">
+          <li class="active"><a href="#!/books">Books</a></li>
+          <li><a href="#!/kart">kart</a></li>
+        </ul>
+      </div>
+  </div>
+  <div ng-view="" class="container"></div>
+  <script data-require="angular.js@1.6.6" data-semver="1.6.6"src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+  <script data-require="angular.js@1.6.6" data-semver="1.6.6"src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
+  <script data-require="angular.js@1.6.6" data-semver="1.6.6"src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-animate.js"></script>
+
+  <script src="app.js"></script>
+  </body>
+</html>
